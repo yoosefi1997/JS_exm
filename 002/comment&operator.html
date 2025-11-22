@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+    // Comment & Operator
+        
+    var name  = "Aria";
+    var age = 29;
+    // multi line comment
+    /*
+        var field = "air";
+        var phone = "09123456789"; 
+    */
+    // single line comment
+        // console.log("my name is " + name + " and my age is " + age + " and my field is " + field + " and my phone number is " + phone);
+        
+        console.log("my name is " + name + " and my age is " + age);
+
+ // -------------------------------------------------
+
+    //  Operators
+        // Arithmetic Operators
+
+                var x = 10
+                var y = 5
+                // dont need the ";" in javascript
+                console.log(x + y); // addition
+                var a = x + y
+                    console.log(" x +"+" y = " + a);
+                var b = x - y
+                    console.log(" x -"+" y = " + b); // subtraction
+                var c = x * y
+                    console.log(" x *"+" y = " + c); // multiplication
+                var d = x / y
+                    console.log(" x /"+" y = " + d); // division
+                var e = x % y
+                    console.log(" x %"+" y = " + e); // modulus
+                var f = x ** y
+                    console.log(" x **"+" y = " + f); // exponentiation
+                var g = x ++
+                    console.log(" x ++"+" = " + g); // increment
+                var h = y --
+                    console.log(" y --"+" = " + h); // decrement
+                var i = ++x
+                    console.log(" ++x"+" = " + i); // pre-increment
+                var j = --y
+                    console.log(" --y"+" = " + j); // pre-decrement
+
+
+        // -------------------------------------------------
+
+        // Assignment Operators
+
+                var m = 10
+                var n = 5
+                    m += n // m = m + n
+                        console.log("m += n = " + m);
+                    m -= n // m = m - n
+                        console.log("m -= n = " + m);
+                    m *= n // m = m * n
+                        console.log("m *= n = " + m);
+                    m /= n // m = m / n
+                        console.log("m /= n = " + m);
+                    m %= n // m = m % n
+                        console.log("m %= n = " + m);
+                    m **= n // m = m ** n
+                        console.log("m **= n = " + m);
+        // -------------------------------------------------
+
+        // Comparison Operators
+
+                var p = 10
+                var q = 5
+                    console.log("p == q = " + (p == q)); // equal to
+                    console.log("p === q = " + (p === q)); // equal value and type
+                    console.log("p != q = " + (p != q)); // not equal
+                    console.log("p !== q = " + (p !== q)); // not equal value or not equal type
+                    console.log("p > q = " + (p > q)); // greater than
+                    console.log("p < q = " + (p < q)); // less than
+                    console.log("p >= q = " + (p >= q)); // greater than or equal to
+                    console.log("p <= q = " + (p <= q)); // less than or equal to
+
+        // -------------------------------------------------
+
+        // Logical Operators
+
+                var r = true
+                var s = false
+                    console.log("r && s = " + (r && s)); // logical and
+                    console.log("r || s = " + (r || s)); // logical or
+                    console.log("!r = " + (!r)); // logical not
+            
+        // -------------------------------------------------
+
+        // String Operators
+
+                var firstName = "Aria"
+                var lastName = "Amini"
+                    console.log("firstName + lastName = " + (firstName + " " + lastName)); // concatenation
+                    console.log("firstName += lastName = " + (firstName += " " + lastName)); // concatenation assignment
+                    firstName += lastName // firstName = firstName + lastName
+                        console.log("firstName += lastName = " + firstName); // concatenation assignment
+
+        // -------------------------------------------------
+
+        // Type Operators
+
+                var t = 10
+                var u = "10"
+                    console.log("typeof t = " + (typeof t)); // returns the type of a variable
+                    console.log("typeof u = " + (typeof u)); // returns the type of a variable
+                    console.log("t instanceof Number = " + (t instanceof Number)); // returns true if the variable is an instance of the specified type
+                    console.log("u instanceof String = " + (u instanceof String)); // returns true if the variable is an instance of the specified type
+                    console.log("u instanceof Number = " + (u instanceof Number)); // returns true if the variable is an instance of the specified type
+                    console.log("t instanceof String = " + (t instanceof String)); // returns true if the variable is an instance of the specified type
+
+        // -------------------------------------------------
+
+        // Bitwise Operators
+
+                var v = 5 // 0101
+                var w = 3 // 0011
+                    console.log("v & w = " + (v & w)); // AND
+                    console.log("v | w = " + (v | w)); // OR
+                    console.log("v ^ w = " + (v ^ w)); // XOR
+                    console.log("~v = " + (~v)); // NOT
+                    console.log("v << 1 = " + (v << 1)); // Left shift
+                    console.log("v >> 1 = " + (v >> 1)); // Right shift
+                    console.log("v >>> 1 = " + (v >>> 1)); // Zero-fill right shift
+
+        // -------------------------------------------------
+
+        // Other Operators
+
+                var x1 = 10
+                var y1 = 5
+                    console.log("x1 in window = " + ("x1" in window)); // returns true if the variable is in the specified object
+                    console.log("y1 in window = " + ("y1" in window)); // returns true if the variable is in the specified object
+                    console.log("delete x1 = " + (delete x1)); // deletes a variable
+                    console.log("delete y1 = " + (delete y1)); // deletes a variable
+                    console.log("x1 = " + x1); // returns the value of the variable
+                    console.log("y1 = " + y1); // returns the value of the variable
+
+        // -------------------------------------------------
+
+        // Operator Precedence
+
+                var z = 10 + 5 * 2 // multiplication has higher precedence than addition
+                    console.log("z = " + z); // 20
+                var z1 = (10 + 5) * 2 // parentheses have higher precedence than multiplication
+                    console.log("z1 = " + z1); // 30
+                var z2 = 10 + (5 * 2) // parentheses have higher precedence than addition
+                    console.log("z2 = " + z2); // 20
+                var z3 = 10 + 5 * 2 - 3 // multiplication has higher precedence than addition and subtraction
+                    console.log("z3 = " + z3); // 17
+                var z4 = 10 + 5 * (2 - 3) // parentheses have higher precedence than multiplication and addition
+                    console.log("z4 = " + z4); // 5
+
+        // -------------------------------------------------
+
+        // Conditional (Ternary) Operator
+
+                var age1 = 18
+                var canVote = (age1 >= 18) ? "Yes" : "No" // if age1 is greater than or equal to 18, canVote is "Yes", otherwise "No"
+                    console.log("canVote = " + canVote); // Yes
+                var age2 = 16
+                var canVote2 = (age2 >= 18) ? "Yes" : "No" // if age2 is greater than or equal to 18, canVote2 is "Yes", otherwise "No"
+                    console.log("canVote2 = " + canVote2); // No
+
+        // -------------------------------------------------
+
+        // Comma Operator
+
+                var x2 = (1, 2, 3) // x2 is assigned the value of the last expression
+                    console.log("x2 = " + x2); // 3
+                var y2 = (10, 20, 30) // y2 is assigned the value of the last expression
+                    console.log("y2 = " + y2); // 30
+                var z5 = (x2 + 1, y2 + 1) // z5 is assigned the value of the last expression
+                    console.log("z5 = " + z5); // 31
+        
+    // -------------------------------------------------
+// End
+
+// -------------------------------------------------
+
+
+    
+
+    </script>
+
+
+</head>
+<body>
+    <h1>درود، من آریا هستم</h1>
+</body>
+</html>
